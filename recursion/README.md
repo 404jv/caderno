@@ -10,7 +10,7 @@ int ateZero(int *num*) {
 }
 ```
 
-## Passo á passo da função:
+## 🐾 Passo á passo da função:
   - Verificar se num é igual a 0, se for retorne 0;
   - caso não for retorne ateZero(num -1);
 
@@ -18,7 +18,7 @@ int ateZero(int *num*) {
 
 ---
 
-## Regras
+## 📏 Regras
 
 As funções recursivas possuem regras, são elas:
   - **Tenha sempre** ao menos um caso base;
@@ -69,17 +69,17 @@ if (num == 0) return 0;
 Basicamente o compilador vai retornar 0 para a função de cima, que por sua vez retornar para a função de cima e assim por diante... Até chegar na primeira função que foi executada e retornar 0 para onde foi iniciada tipo lá na main().
 
 ---
-## Recursão direta
+## 🎯 Recursão direta
 
 É a recursão que a função chama ela mesma.
 
 ---
-## Recursão indireta 
+## 👉👈 Recursão indireta 
 
 É a recursão que a função X chama uma função Y que chama a função X...
 
 ---
-## Recursão TAIL (com calda)
+## 🐕 Recursão TAIL (com calda)
 
 A função onde a `recursão está no final da função`, ou seja, função tail.
 
@@ -94,7 +94,7 @@ int ateZero(int num) {
 }
 ```
 ---
-## Recursão NON-TAIL (sem calda)
+## 🐑 Recursão NON-TAIL (sem calda)
 Aqui a `recursão não está no final`, a **estrutura** é essa:
 
 ```C
