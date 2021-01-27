@@ -14,18 +14,16 @@ int ateZero(int *num*) {
   - Verificar se num é igual a 0, se for retorne 0;
   - caso não for retorne ateZero(num -1);
 
-`Identificar` o objetivo da função é muito importante para entender ela, no caso dessa o objetivo é diminuir uma variavel num até 0.
+`Identificar` o objetivo da função é muito importante para entender ela, no caso dessa o objetivo é diminuir uma variável num até 0.
 
 ---
 
 ## Regras
 
 As funções recursivas possuem regras, são elas:
-  - **Tenha sempre** ao menos um caso base;
-
-  - Tenha um local aonde a recursividade vai acontecer (a função vai se chamar);
-
-  - Altere o estado para que fique mais próximo do caso base á cada chamada da função;
+  - **Tenha sempre** ao menos um caso base;
+  - Tenha um local aonde a recursividade vai acontecer (a função vai se chamar);
+  - Altere o estado para que fique mais próximo do caso base á cada chamada da função;
 
 `caso base` é a cadição onde vai parar o loop de chamadas, no exemplo anterio era:
 ```C
@@ -33,15 +31,15 @@ if (num == 0) return 0;
 ```
 
 `Onde a recursividade acontece?`
-Vai depender do tipo de recursividade, normalmente no final que são as funções `recursivas` diretas, porém com tudo toda via, a recursão pode acontecer no meio que são as funções `indiretas`.
+Vai depender do tipo de recursividade, normalmente no final que são as `funções recursivas diretas`, porém com tudo toda via, a recursão pode acontecer no meio que são as funções `indiretas`.
 
-`Altere o estado`
+`Altere o estado` </br>
 No nosso exemplo anterior alteramos o estado da num nessa linha:
 
 ```C
 return ateZero(num -1);
 ```
-Repare que pode existir muitas funções ateZero e muitas variáveis num, então nessa linha acima é alterando o valor da num da próxima função, se eu passar 3 nessa função vai ser mais ou menos essa lógica:
+Repare que pode existir muitas funções ateZero e muitas variáveis num então nessa linha acima é alterando o valor da num da próxima função, se eu passar 3 nessa função vai ser mais ou menos essa lógica:
 
 ```C
 ateZero(3);
@@ -51,7 +49,7 @@ O compilador vai vê que não é 0, então chama ela de novo, só 
 ```C
 ateZero(2);
 ```
-Mesma coisa 2 não é, então n - 1, 2 - 1 é 0 1.
+Mesma coisa 2 não é, então n - 1, 2 - 1 é 0.
 
 ```C
 ateZero(1);
@@ -68,7 +66,7 @@ Quando iniciar essa função, o valor vai cair no caso base que é:
 if (num == 0) return 0;
 ```
 
-Basicamente o compilador vai retornar o 0 para a função de cima, que vai retornar também para a de cima e assim por diante... Até chegar na primeira função que foi executada e retornar o 0 para onde foi iniciada tipo lá na main().
+Basicamente o compilador vai retornar 0 para a função de cima, que por sua vez retornar para a função de cima e assim por diante... Até chegar na primeira função que foi executada e retornar 0 para onde foi iniciada tipo lá na main().
 
 ---
 ## Recursão direta
