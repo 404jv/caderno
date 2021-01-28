@@ -3,14 +3,14 @@ Recursividade dá a possibilidade de uma função chamar ela mesma.
 
 como nesse exemplo:
 ```C
-int ateZero(int *num*) {
+int ateZero(int num) {
   if (num == 0) return 0;
 
   return ateZero(num -1);
 }
 ```
 
-## 🐾 Passo á passo da função:
+## 🐾 Passo a passo da função:
   - Verificar se num é igual a 0, se for retorne 0;
   - caso não for retorne ateZero(num -1);
 
@@ -30,9 +30,9 @@ As funções recursivas possuem regras, são elas:
 if (num == 0) return 0;
 ```
 
-`Onde a recursividade acontece?`
+`Onde a recursividade acontece?` </br>
 Vai depender do tipo de recursividade, normalmente no final que são as `funções recursivas diretas`
-porém com tudo toda via, a recursão pode acontecer no meio que são as funções `indiretas`.
+porém com tudo toda via, a recursão pode acontecer no meio que são as `funções recursivas indiretas`.
 
 `Altere o estado` </br>
 No nosso exemplo anterior alteramos o estado da num nessa linha:
