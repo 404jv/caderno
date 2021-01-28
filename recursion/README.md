@@ -11,8 +11,8 @@ int ateZero(int *num*) {
 ```
 
 ## 🐾 Passo á passo da função:
-  - Verificar se num é igual a 0, se for retorne 0;
-  - caso não for retorne ateZero(num -1);
+  - Verificar se num é igual a 0, se for retorne 0;
+  - caso não for retorne ateZero(num -1);
 
 `Identificar` o objetivo da função é muito importante para entender ela, no caso dessa o objetivo é diminuir uma variável num até 0.
 
