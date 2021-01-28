@@ -31,7 +31,8 @@ if (num == 0) return 0;
 ```
 
 `Onde a recursividade acontece?`
-Vai depender do tipo de recursividade, normalmente no final que são as `funções recursivas diretas`, porém com tudo toda via, a recursão pode acontecer no meio que são as funções `indiretas`.
+Vai depender do tipo de recursividade, normalmente no final que são as `funções recursivas diretas`
+porém com tudo toda via, a recursão pode acontecer no meio que são as funções `indiretas`.
 
 `Altere o estado` </br>
 No nosso exemplo anterior alteramos o estado da num nessa linha:
@@ -49,7 +50,7 @@ O compilador vai vê que não é 0, então chama ela de novo, só 
 ```C
 ateZero(2);
 ```
-Mesma coisa 2 não é, então n - 1, 2 - 1 é 0.
+Mesma coisa 2 não é, então n - 1, 2 - 1 é 1.
 
 ```C
 ateZero(1);
