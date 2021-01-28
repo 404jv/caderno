@@ -67,7 +67,7 @@ Quando iniciar essa função, o valor vai cair no caso base que é:
 if (num == 0) return 0;
 ```
 
-Basicamente o compilador vai retornar 0 para a função de cima, que por sua vez retornar para a função de cima e assim por diante... Até chegar na primeira função que foi executada e retornar 0 para onde foi iniciada tipo lá na main().
+Basicamente o compilador vai retornar 0 para a função de cima, que por sua vez retornar para a de cima e assim por diante... Até chegar na primeira função que foi executada e retornar 0 para onde a função foi chamada tipo lá na main().
 
 ---
 ## 🎯 Recursão direta
