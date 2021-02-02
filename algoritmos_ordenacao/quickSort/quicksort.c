@@ -17,7 +17,7 @@ int main() {
 
 int partition(int arr[], int low, int high) {
     int pivot = arr[high]; 
-    int i = low -1; // posição do possível menor elemento
+    int i = low -1;
 
     for (int j = low; j <= high -1; j++) {
         if (arr[j] < pivot) {
@@ -27,7 +27,6 @@ int partition(int arr[], int low, int high) {
     }
 
     swap(&arr[i +1], &arr[high]);
-
     return (i + 1);
 }
 
