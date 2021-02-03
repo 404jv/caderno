@@ -23,7 +23,7 @@ Nesse exemplo vamos escolher o último elemento como pivot que é o nosso 5.
 <img src="https://ik.imagekit.io/dwei78ukbe/separacao1_TtbmipxPJR.png" />
 
 Vamos então colocar todos os números menor ou igual a 5 na esquerda da lista, e todos os maiores na direita.
-Na esquerda vai ficar o 4 e 3, já na direita vai ficar o 10, 9, 6 e 8, repara que eu não estou criando novas listas e sim trocando os mesmos elementos de lugar.
+Na esquerda vai ficar o 4 e 3, já na direita vai ficar o 10, 9, 6 e 8.
 
 <img src="https://ik.imagekit.io/dwei78ukbe/separacao2_hJ8VpDZDxh.png" />
 
@@ -55,6 +55,10 @@ Também o nosso 4 vai subir para a direita do 3.
 E por fim, vamos colocar a direita (6, 8, 9, 10) na direita do 5 e a esquerda (3, 4) na esquerda do 5.
 
 <img src="https://ik.imagekit.io/dwei78ukbe/organizacao4_tmOne2Y0Cu.png" />
+
+🎉 E pronto nossa lista foi organizada com o QuickSort, lembrando que se você está com dificuldade saiba que esse algoritmo é realmente difícil (você percebeu kkkk) e precisa de tempo, prática e uma boa pausa é sempre bem-vinda para o seu cérebro assimilar tudo.
+
+🧠 Você pode aprender qualquer coisa e até a próxima.
 
 ---
 <p align="center">Feito com 💚 por João Victor Ramalho Alves</p>
