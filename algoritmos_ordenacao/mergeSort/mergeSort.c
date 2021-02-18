@@ -2,73 +2,76 @@
 #include <stdlib.h>
 
 
-void printArray(int arr[], int size);
-void merge(int arr[], int left, int mid, int right);
-void mergeSort(int arr[], int left, int right);
+void printLista(int arr[], int tamanho);
+void merge(int arr[], int esquerda, int meio, int direita);
+void mergeSort(int arr[], int esquerda, int direita);
 
 int main(void) {
   int arr[] = {7, 4, 10, 8, 5, 7, 3};
   int n = sizeof(arr) / sizeof(arr[0]);
 
   mergeSort(arr, 0, n -1);
-  printArray(arr, n);
-
+  printLista(arr, n);
 }
 
-void printArray(int arr[], int size) {
-  for (int i = 0; i < size; i++) {
+void printLista(int arr[], int tamanho) {
+  for (int i = 0; i < tamanho; i++)
     printf("%d ", arr[i]); 
-  }
-
   printf("\n");
 }
 
-void merge(int arr[], int left, int mid, int right) {
-  int pointL, pointR, pointA;
-  int endL = mid - left +1;
-  int endR = right - mid;
+void merge(int arr[], int esquerda, int meio, int direita) {
+  int fim_esquerda = meio - esquerda +1;
+  int fim_direita = direita - meio;
+  int esq, dir, lis;
 
-  int subLeft[endL], subRight[endR];
+  int subEsq[fim_esquerda], subDir[fim_direita];
 
-  for (pointL = 0; pointL < endL; pointL++)
-    subLeft[pointL] = arr[left + pointL];
-  for (pointR = 0; pointR < endR; pointR++)
-    subRight[pointR] = arr[mid + 1 + pointR];
+  for (esq = 0; esq < fim_esquerda; esq++)
+    subEsq[esq] = arr[esquerda + esq];
+  for (dir = 0; dir < fim_direita; dir++)
+    subDir[dir] = arr[meio + 1 + dir];
 
-  pointL = pointR = 0; 
-  pointA = left;
+  printLista(subEsq, fim_esquerda);
+  printLista(subDir, fim_direita);
 
-  while (pointL < endL && pointR < endR) {
-    if (subLeft[pointL] <= subRight[pointR]) {
-      arr[pointA] = subLeft[pointL];
-      pointL++;
+  esq = dir = 0; 
+  lis = esquerda;
+
+  while (esq < fim_esquerda && dir < fim_direita) {
+    if (subEsq[esq] <= subDir[dir]) {
+      arr[lis] = subEsq[esq];
+      esq++;
     } else {
-      arr[pointA] = subRight[pointR];
-      pointR++;
+      arr[lis] = subDir[dir];
+      dir++;
     } 
-    pointA++;
+    lis++;
+    printLista(arr, 7);
   }
 
-  while (pointL < endL) {
-    arr[pointA] = subLeft[pointL];
-    pointL++;
-    pointA++;
+  while (esq < fim_esquerda) {
+    arr[lis] = subEsq[esq];
+    esq++;
+    lis++;
+    printLista(arr, 7);
   }
 
-  while (pointR < endR) {
-    arr[pointA] = subRight[pointR];
-    pointR++;
-    pointA++;
+  while (dir < fim_direita) {
+    arr[lis] = subDir[dir];
+    dir++;
+    lis++;
+    printLista(arr, 7);
   }
 }
 
-void mergeSort(int arr[], int left, int right) {
-  if (left < right) {
-    int m = left + (right - left) / 2;
+void mergeSort(int arr[], int esquerda, int direita) {
+  if (esquerda >= direita) return;
 
-    mergeSort(arr, left, m);
-    mergeSort(arr, m +1, right);
+  int meio = esquerda + (direita - esquerda) / 2;
 
-    merge(arr, left, m, right);
-  }
+  mergeSort(arr, esquerda, meio);
+  mergeSort(arr, meio +1, direita);
+
+  merge(arr, esquerda, meio, direita);
 }
