@@ -3,7 +3,7 @@ Esses algoritmos são muito importantes para a programação, tente imaginar voc
 
 ## 👨‍💻 Algoritmos de ordenação
 - 🔢 [QuickSort](quickSort)
-
+- 👽 [MergeSort](mergeSort)
 <br>
 
 ---
