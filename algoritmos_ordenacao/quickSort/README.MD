@@ -1,9 +1,6 @@
 # 🔢 Quick Sort
 Esse algoritmo é muito comum na computação, basicamente oque define ele é “dividir e conquistar”. Esse algoritmo separa a lista no meio e começa a trocar os valores relativo ao pivot.
 
-## ⚠ Aviso
-Coloque o GitHub no modo white para conseguir ver as letras na imagem.
-
 ## 🐾 Passo a Passo com baralhos
 Vamos imaginar eu e você está jogando um truco e simplesmente do nada eu tento te explicar como funciona o QuickSort, então aqui vai:
 
