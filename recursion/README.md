@@ -25,7 +25,7 @@ As funções recursivas possuem regras, são elas:
   - Tenha um local aonde a recursividade vai acontecer (a função vai se chamar);
   - Altere o estado para que fique mais próximo do caso base á cada chamada da função;
 
-`caso base` é a cadição onde vai parar o loop de chamadas, no exemplo anterio era:
+`caso base` é a condição onde vai parar o loop de chamadas, no exemplo anterio era:
 ```C
 if (num == 0) return 0;
 ```
