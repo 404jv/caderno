@@ -13,7 +13,7 @@ int main(void) {
 int buscaBinaria(int lista[], int esquerda, int direita, int elemento) {
   if (direita < esquerda) return -1;
  
-  int meio = (direita + esquerda) / 2; // 10
+  int meio = (direita + esquerda) / 2;
 
   if (elemento == lista[meio]) return meio;
 
