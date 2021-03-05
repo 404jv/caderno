@@ -92,3 +92,10 @@ OPSS! Repara que nesse exato momento a esquerda está maior do que a direita é 
 ```C
 if (direita < esquerda) return -1;
 ```
+
+🎉 E pronto!! Assim fizemos duas buscas com um dos algoritmos de buscas mais fodas 😎 e se você ficou com dificuldades saiba que é normal com um pouco mais de tempo, prática e uma boa pausa para o seu cérebro assimilar tudo, VOCÊ chega lá.
+
+🧠 Você pode aprender qualquer coisa e até a próxima.
+
+---
+<p align="center">Feito com 💚 por João Victor Ramalho Alves</p>
