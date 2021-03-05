@@ -2,7 +2,7 @@
 Um dos algoritmos de busca mais poderosos de todos!. A busca binária procura um elemento em uma lista ordenada através de uma "investigação" Que dura de 2 passos á 4 passos.
 
 ## 🕵️‍♂️ Investigação
-Três simple passos que esse algoritmo vai seguir recursivamente, antes de explicar entenda que **X** é o elemento em que estamos buscando na lista.
+Três simples passos que esse algoritmo vai seguir recursivamente, antes de explicar entenda que **X** é o elemento em que estamos buscando na lista.
 
 - ➗ **Dividir** a lista e pegar o elemento do meio.
 - 👨‍❤️‍👨 Caso o X e lista[meio] derem **match** (serem iguais), então retorna o meio.
@@ -10,7 +10,7 @@ Três simple passos que esse algoritmo vai seguir recursivamente, antes de expli
 
 
 ➗ `Dividir` <br/>
-Agora a parte mais técnica desse algoritmo. Para descobrir o meio da lista basta somar a **direita** e a **esquerda**, onde a direita é o último elemento da lista e a esquerda é o primeiro elemento da lista e depois dividir essa soma por 2 arredondando para baixo. Lembrando que nós sempre vamos colocar esses valores em variáveis pois **a cada recursão da nossa função o início eo fim da lista serão diferentes**. Então vamos pensar esse exemplo:
+Agora a parte mais técnica desse algoritmo. Para descobrir o meio da lista basta somar a **direita** e a **esquerda**, onde a direita é a última posição da lista e a esquerda é a primeira posição e depois dividir essa soma por 2 arredondando para baixo. Lembrando que nós sempre vamos colocar esses valores em variáveis pois **a cada recursão da nossa função o início eo fim da lista serão diferentes**. Então vamos pensar esse exemplo:
 
 ```C
 lista[3, 6, 9, 10, 11, 20]; // "m" é o meio
@@ -19,14 +19,14 @@ lista[3, 6, 9, 10, 11, 20]; // "m" é o meio
 A esquerda aqui é 0 e a direita 5, (0 + 5) / 2 é 2.5 arredondando para baixo é 2.
 
 👨‍❤️‍👨 `Match` <br/>
-Então nós temos o meio da lista agora precisamos comparar se a lista na posição meio for igual ao X, é só retornar o meio.
+Então nós temos o meio da lista agora precisamos comparar se a lista na posição meio é igual ao X, se for então retornar o meio.
 
 ```C
 if (lista[meio] == X) return meio;
 ``` 
 
 🍺 `A fila anda` <br/>
-Agora nós sabemos que o elemento do meio não é oque queremos, então partindo da ideia que essa lista está ordenada de forma crescente, nós precisamos verficar se o X é maior a lista[meio] nesse caso passamos a direita dessa lista pois toda a esquerda vai ter apenas números menores já a direita pode ter iguais ou maiores ao X.
+Agora nós sabemos que o elemento do meio não é oque queremos, então partindo da ideia que essa lista está ordenada de forma crescente, nós precisamos verficar se o X é maior do que lista[meio] nesse caso passamos a direita dessa lista pois toda a esquerda vai ter apenas números menores, já a direita pode ter iguais ou maiores do que X.
 
 ```C
 if (X > lista[meio]) 
