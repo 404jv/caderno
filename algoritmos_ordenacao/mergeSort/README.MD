@@ -37,11 +37,11 @@ Agora temos que unir as duas sublistas ordenadas devolta para a lista completa.
 ## 🐾 Passo a Passo com baralhos
 Vamos imaginar que eu e você está jogando um UNO e do nada eu tento explicar o merge sort para você, então vamos lá.
 
-<img src="https://ik.imagekit.io/dwei78ukbe/quick_sort/finalizado_hz5Bk71SE.png" />
+<img src="https://ik.imagekit.io/dwei78ukbe/quick_sort/separacao1_qMdcEiN53.png" />
 
 Esses primeiros passos são bem simples é só dividir tudo recursivamente.
 
-<img src="https://ik.imagekit.io/dwei78ukbe/quick_sort/uniao5_8qeEzYCKk.png" />
+<img src="https://ik.imagekit.io/dwei78ukbe/quick_sort/separacao2_gyTZWabZJ.png" />
 
 Ok dividimos uma lista em duas sublistas, agora essas sublistas também vão ter sublistas.
 
