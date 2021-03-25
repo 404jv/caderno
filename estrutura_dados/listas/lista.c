@@ -1,6 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
-  char a[3] = { 'J', 'a', 'o' };
-  printf("%c%c%c", a[0], a[1], a[2]);
+  char a[3] = { 'J', 'a' };
+
+  char* nome;
+  nome = "Jao";
+  printf("%s", nome);
+
+  free(nome);
 }
