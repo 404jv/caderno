@@ -1,8 +1,6 @@
 # 🌌 Listas
 A lista é uma estrutura de dados para armazenar valores e cada um desses valores são identificados com um index ou chave (são a mesma coisa), as listas também são chamadas de vetores ou variável indexada.
 
-## ⚠ Artigo ainda em biulding...
----
 ## ❓ Porque usar Listas?
 Imagine que você e eu precisamos fazer uma missão que é pegar as seguintes informações: tamanho, tem água e distância do sol do planeta Vênus, isso é bem simples, neh? É só criar 3 variaveis, mas agora imagina para mais 2 planetas além de Vênus, já são 9 variaveis, ou seja, variaveis acabam sendo dificeis para usar então precisamos recorrer as listas.
 
@@ -120,7 +118,7 @@ cartas[1] = 10;
 E assim está nossa lista agora:
 <img src="./public/lista3.png" />
 
-Já tá facil, não? Então aqui vai uma pergunta: <br>`Eu posso colocar a carta 8 na posição 3, assim "pulando" a posição 2?` 🤔... Vamos tentar fazer isso:
+Já tá fácil, não? Então aqui vai uma pergunta: <br>`Eu posso colocar a carta 8 na posição 3, assim "pulando" a posição 2?` 🤔... Vamos tentar fazer isso:
 
 ```C
 cartas[3]
