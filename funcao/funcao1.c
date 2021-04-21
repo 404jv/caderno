@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-int sum(int array[]) {
-  printf("HEloo");
-  return 1;
-}
+char status_aluno(float nota);
 
 int main(void) {
-  int array[] = { 1, 2, 3 };
+  printf("%c", status_aluno(70));
+}
 
-
-  int i = sum(array);
+char status_aluno(float nota) {
+  if (nota >= 60) return 'A';
+ 
+  if (nota < 60 && nota > 30) return 'O';
+ 
+  return 'R';
 }
