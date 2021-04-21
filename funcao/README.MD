@@ -224,4 +224,9 @@ char status_aluno(float nota) {
 }
 ```
 
-VOILÁ! Lindo demais, neh? Terminamos essa função, espero que você use essas dicas para deixar suas funções mais performáticas e mais legibilidade. 
+🎉E VOILÁ! Lindo demais, neh? Terminamos essa função, espero que você use essas dicas para deixar suas funções mais performáticas e mais legibilidade. 
+
+🧠 Você pode aprender qualquer coisa e até a próxima.
+
+---
+<p align="center">Feito com 💚 por João Victor Ramalho Alves<p>
