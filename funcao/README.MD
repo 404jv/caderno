@@ -75,7 +75,7 @@ que não tem parâmetros tão importantes como nesse exemplo.
 
 int sacar_dinheiro(float valor_saque, char user_id[]);
 
-char procurar_letra_f(int palavra[]);
+char procurar_letra_f(char palavra[]);
 
 void escreva_hello_world();
 ```
@@ -173,6 +173,7 @@ char status_aluno(float nota) {
   return status;
 }
 ```
+O return é a palavrinha mágica que vai falar para o compilador “Olha! para tudo por aqui e retorna esse valor” Claro que às vezes não vai ter um valor para retornar como é caso de uma função void, porém você pode usar o return de boa desde que ele não retorna um valor.
 
 ### 🐱‍👤 Se aprofundando nas rotinas
 Nesse artigo eu não quero apenas falar sobre como criar funções e como elas funcionam, aqui eu quero ir além e falar de como construir funções mais performáticas e mais legíveis.  <br />
@@ -216,6 +217,22 @@ Agora vamos tirar o outro else também porque caso o estudante não tenha passad
 
 ```C
 char status_aluno(float nota) {
+  if (nota >= 60) {
+    return 'A';
+  }
+ 
+  if (nota < 60 && nota > 30) {
+    return 'O';
+  }
+ 
+  return 'R';
+}
+
+```
+
+E uma última coisinha que eu particularmente prefiro, é tirar essas chaves e deixar tudo em uma mesma linha, ficando assim: 
+```C
+char status_aluno(float nota) {
   if (nota >= 60) return 'A';
  
   if (nota < 60 && nota > 30) return 'O';
@@ -224,7 +241,7 @@ char status_aluno(float nota) {
 }
 ```
 
-🎉E VOILÁ! Lindo demais, neh? Terminamos essa função, espero que você use essas dicas para deixar suas funções mais performáticas e mais legibilidade. 
+🎉E VOILÁ! Lindo demais, neh? Terminamos essa função, espero que você use essas dicas para deixar suas funções mais performáticas e com mais legibilidade. 
 
 🧠 Você pode aprender qualquer coisa e até a próxima.
 
