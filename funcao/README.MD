@@ -1,7 +1,7 @@
 <h1 align="center">🐳 Função</h1>
 As funções têm como objetivo separar uma determinada parte do código e dar um nome para ela e sempre quando você chamar esse nome, aquela parte do código vai ser executada.
 
-▶ Vídeo no Youtube <a href"https://youtu.be/NyJqUW2-Wfw">Funções com Freefire</a> 
+▶ Vídeo no Youtube <a href="https://youtu.be/NyJqUW2-Wfw">Funções com Freefire</a> 
 
 ## ❓ Por que usar?
 Pelo simples fato das funções darem a possibilidade de reaproveitar linhas de códigos em vários lugares do código. Caso tenha pensado: “Ah! Por que eu não uso um laço de repetição, invés disso?” Para não complicar vamos de exemplo: Imagine que você quer somar 1 + 1, 50 vezes e para isso você usa um for, tipo assim:
