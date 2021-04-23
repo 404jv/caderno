@@ -103,14 +103,14 @@ Okay o tipo da função é char, pois quero retornar um "A" de aprovado, um "R" 
 
 ```C
 char status_aluno(float nota) {
-  char status = "";
+  char status;
 }
 ```
 Vamos focar apenas na função status_aluno, aqui eu quero te mostrar como a maioria dos iniciantes pensariam em fazer essa função, depois eu vou mostrar dicas de como melhorar essa função. Primeiro eu criei uma variável chamada status que vai receber “A”, “R” ou “O”, então vamos começar a verificar as notas:
 
 ```C
 char status_aluno(float nota) {
-  char status = "";
+  char status;
   
   if (nota >= 60) {
     status = 'A';
@@ -122,7 +122,7 @@ Essa lógica é bem simples, não tem muito o que falar, neh? Eu recebo um parâ
 
 ```C
 char status_aluno(float nota) {
-  char status = "";
+  char status;
   
   if (nota >= 60) {
     status = 'A';
@@ -138,7 +138,7 @@ Algo muito comum é usar o else if, caso o cara não tenha passado restam duas o
 
 ```C
 char status_aluno(float nota) {
-  char status = "";
+  char status;
   
   if (nota >= 60) {
     status = 'A';
@@ -158,7 +158,7 @@ Então se ele(a) Não passou e também não ficou de recuperação, essa pessoa 
 
 ```C
 char status_aluno(float nota) {
-  char status = "";
+  char status;
   
   if (nota >= 60) {
     status = 'A';
