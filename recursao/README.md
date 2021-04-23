@@ -1,6 +1,8 @@
 # 📂 Recursão
 Recursividade dá a possibilidade de uma função chamar ela mesma.
 
+▶ Vídeo no Youtube: https://youtu.be/NyJqUW2-Wfw
+
 como nesse exemplo:
 ```C
 int ateZero(int num) {
