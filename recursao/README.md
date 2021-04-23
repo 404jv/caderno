@@ -94,6 +94,19 @@ int ateZero(int num) {
   return ateZero(num -1);
 }
 ```
+
+Algo **muito importante** para se ficar atento é que a partir do momento que a recursão está no final, mas existe algo a mais como uma soma ou multiplicação, a recursão vai ser non-tail, por exemplo:
+```C
+int ateZero(int num) {
+  // CASO BASE
+  if (num == 0) return 0;
+  
+  // RECURSÃO
+  return 1 + ateZero(num -1);
+}
+```
+A recursão não é a última coisa a ser feita, pois essa soma também está no final, ou seja, esse função de cima é non-tail.
+
 ---
 ## 🐑 Recursão NON-TAIL (sem calda)
 Aqui a `recursão não está no final`, a **estrutura** é essa:
