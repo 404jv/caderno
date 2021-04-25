@@ -20,3 +20,43 @@ Nesse exemplo ligamos um dinossauro, aqui representamos a linha horizontal como 
 Existem algumas maneiras de descrever essa mesma posição, no exemplo acima vimos pelo plano cartesiano e vimos também em coordenadas X e Y, outra maneira é o os vetores:<br />
 
 ![]()
+
+## 2.2 Plane vector arithmetic
+Para calcular vetores com setas precisamos usar uma regra, chamada "tip-to-tail"
+Basicamente se inicarmos uma seta no incio de uma das setas e no final da outra seta, obtemos
+a soma dela:
+
+![imagem](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-04-24_210043_qMtDmqOzA.png)
+
+
+Nós usamos essa soma de vetores para mover objetos ou coleções de pontos, por exemplo:
+```py
+from chapter2.draw_vectors import *
+
+def add(xy, v): return (xy[0] + v[0], xy[1] + v[1])
+
+dino_vectors = [(6,4), (3,1), (1,2), (-1,5), (-2,5), (-3,4), (-4,4), 
+ (-5,3), (-5,2), (-2,2), (-5,1), (-4,0), (-2,1), (-1,0), (0,-3), 
+ (-1,-4), (1,-4), (2,-3), (1,-2), (3,-1), (5,1) 
+] 
+
+dino_vectors2 = [add((-1.5,-2.5), v) for v in dino_vectors]
+
+draw(
+  Points(*dino_vectors, color=blue),
+  Polygon(*dino_vectors, color=blue),
+
+  Points(*dino_vectors2, color=red),
+  Polygon(*dino_vectors2, color=red)
+)
+```
+Aqui nós pegamos o dinossauro azul e adicionamos (-1.5, -2.5) para cada ponto em um novo 
+dinossauro vermelho:
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-04-24_211533_p6sSMsKnq.png)
+
+## 2.2.1 Vector components and lengths
+O tamanho de um vetor é o tamanho da seta que representa o mesmo, ou seja, a seta começa no ponto de origem (0, 0) e vai até o final desse vetor, todo esse espaço percorrido entre esse dois pontos é o tamanho do vetor assim como é o tamanho dessa seta.
+
+Podemos usar o teorema de Pitaguras, pois caso temos 3 vetores e o tamanho de um deles está faltando, então conseguimos saber o valor do que está faltando, por exemplo:
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-04-24_213527_4mckcapWc.png)
+
