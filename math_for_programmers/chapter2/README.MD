@@ -57,6 +57,57 @@ dinossauro vermelho:
 ## 2.2.1 Vector components and lengths
 O tamanho de um vetor é o tamanho da seta que representa o mesmo, ou seja, a seta começa no ponto de origem (0, 0) e vai até o final desse vetor, todo esse espaço percorrido entre esse dois pontos é o tamanho do vetor assim como é o tamanho dessa seta.
 
-Podemos usar o teorema de Pitaguras, pois caso temos 3 vetores e o tamanho de um deles está faltando, então conseguimos saber o valor do que está faltando, por exemplo:
+Podemos usar o teorema de Pitaguras, pois caso temos 3 vetores e o tamanho de um deles está faltando, então conseguimos saber o valor do que está faltando, por exemplo: <br />
 ![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-04-24_213527_4mckcapWc.png)
+
+## 2.2.2 multiplying vectors by numbers
+Nos podemos multiplicar vetores, se eu tiver um vetor **W = (3, -1)** e precisamos multiplicar o mesmo por 5: <br />
+`5 * W = 5 * (3, - 1) = (5 * 3, 5 * -1) = (15, -5)` <br />
+
+
+## 2.2.3 subtraction, displacement, and distance
+Para subtrair um W de um vetor V nós precisamos somar -w com y, ficando **y + (-w)**, ou seja, caso o vetor V seja V = (-1, 3) e W seja W = (2, 2), a soma deles ficariam: v + (-w) = (-1 -2, 3 - 2) = (-3, 1), olhe o resultado no plano:
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-04-26_191446_q_IBSgz7C.png)
+
+podemos interpretar as coordenadas de V - W, como a diferença entre as coordenadas de V e W isoladamente. Então utilizamos essa subtração de vetores para saber o quão longe um ponto está do outro, se rodarmos esse código:
+```py
+from draw_vectors import *
+
+draw ( 
+ Points((2,2), (-1,3)), 
+ Segment((2,2), (-1,3), color=red) 
+) 
+```
+A subtração entre esse dois vetores V - W = (-3, 1) nos mostra que se começarmos no ponto W, vamos precisar ir 3 pontos a esquerda (x = -3) e um ponto para cima (y = 1), olha no plano: <br />
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-04-26_192713_idLSIAZpd.png)
+
+O tamanho de um vetor um número e não um outro vetor que nem o resultado de uma subtração entre vetores, portanto se eu quiser descobrir o tamanho do vetor (-3, 1), precisamos usar o teorema de Pitagoras:<br />
+`sqrt((-3)**2 + 1**2) = sqrt(9 + 1) = 3.162...`
+
+### Mini project 2.9:
+`Any sum of vectors v + w gives the same result as w + v. Explain why this is true using the definition of 
+the vector sum on coordinates. Also, draw a picture to show why it is true geometrically.` <br />
+A ordem dos fatores não altera o resultado, pois na soma de vetores precisamos somar o
+x de V com o x do W que vai ser o mesmo resultado pois -1 + 2 = 1 e 2 + (-1) = 1, e assim
+vale para o y.
+```py
+from draw_vectors import *
+
+draw (
+  Points((-1, 3), (2, 2), (1, 5)),
+  
+  Arrow((-1, 3), (0, 0), color=blue),
+  Arrow((2, 2), (0, 0), color=red),
+
+  Segment((0, 0), (1, 5), color=purple),
+
+  Arrow((1, 5), (2, 2), color=green),
+  Arrow((1, 5), (-1, 3), color=green),
+) 
+```
+Na geometria essa soma de W + V e V + W,  forma um paralelogramo e o seu tamanho (representado pela linha roxa) é o valor da soma: <br />
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Figure_1_LI_RgOB3LlTt.jpg)
 
