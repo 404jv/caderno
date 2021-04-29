@@ -57,8 +57,12 @@ dinossauro vermelho:
 ## 2.2.1 Vector components and lengths
 O tamanho de um vetor é o tamanho da seta que representa o mesmo, ou seja, a seta começa no ponto de origem (0, 0) e vai até o final desse vetor, todo esse espaço percorrido entre esse dois pontos é o tamanho do vetor assim como é o tamanho dessa seta.
 
+Então se eu tenho vetor (-6, -6), os componentes desse vetor é (-6, 0) e (0, -6), ambos tem o tamaho de 6.
+
 Podemos usar o teorema de Pitaguras, pois caso temos 3 vetores e o tamanho de um deles está faltando, então conseguimos saber o valor do que está faltando, por exemplo: <br />
 ![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-04-24_213527_4mckcapWc.png)
+
+Pegando o mesmo exemplo do vetor (-6, -6) o tamanho vai ser a raiz de 6**2 + 6**2 = 36 + 36 = 72, colocando esse resultado na raiz, obtemos aproximadamente 8,485213 que é o tamanho do vetor.
 
 ## 2.2.2 multiplying vectors by numbers
 Nos podemos multiplicar vetores, se eu tiver um vetor **W = (3, -1)** e precisamos multiplicar o mesmo por 5: <br />
@@ -111,3 +115,30 @@ Na geometria essa soma de W + V e V + W,  forma um paralelogramo e o seu tamanho
 
 ![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Figure_1_LI_RgOB3LlTt.jpg)
 
+### Exercise 2.12
+Se a soma de (3, -2) + (1, 1) + (-2, -2) é (2, -3), ou seja, o x vale (2, 0) e o y vale (0, -3) isso diz que o 2 "anda" dois pontos a direta e o y anda três pontos para baixo, então y acaba sendo maior do que o três, pois seu comprimento é maior.
+
+
+### Exercise 2.13
+Então se eu tenho vetor (-6, -6), os componentes desse vetor é (-6, 0) e (0, -6), ambos tem o tamaho de 6. (-6, -6) o tamanho vai ser a raiz de 6**2 + 6**2 = 36 + 36 = 72, colocando esse resultado na raiz, obtemos aproximadamente 8,485213 que é o tamanho do vetor. <br />
+
+Já (5, -12) tem os componentes (5, 0) e (0, -12), o primeiro componente tem o tamanho de 5 e o outro de 12 e o tamanho do vetor (5, -12) é 5**2 + 12**2 = 25 + 144 = 169 colocando esse valor na raiz temos 13 que é o tamanho do vetor.
+
+### Exercise 2.14
+Podemos usar o teorema de Pitagoras para descobrir um dos catetos, já  que temos a hipotenusa que é 6**2 e um dos catetos que é 1**2. Colocando isso na formula 6**2 = 1**2 + x**2, então x**2 é 35 colocando isso na raiz temos aproximadamente 5,916. Porém essa formula não consegue dizer a direção, pois pode ser tanto (1, 5,916) quanto (1, -5,916).
+
+
+
+18: Convince yourself algebraically that scaling the coordinates by a factor also scales the length of the 
+vector by the same factor. Suppose a vector of length c has the coordinates (a, b). Show that for any non-negative real 
+number s, the length of (s ∙ a, s ∙ b) is s ∙ c. (This can’t work for a negative value of s because a vector can’t have a 
+negative length.)
+
+x = (a, b) 
+x tamanho c
+
+s * x = (s * a, s * b)
+
+s *
+
+Suponha que um vetor de comprimento c tenha as coordenadas (a, b). Mostre que, para qualquer número s, o comprimento de (s ∙ a, s ∙ b) é s ∙ c.
