@@ -116,7 +116,7 @@ Na geometria essa soma de W + V e V + W,  forma um paralelogramo e o seu tamanho
 ![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Figure_1_LI_RgOB3LlTt.jpg)
 
 ### Exercise 2.12
-Se a soma de (3, -2) + (1, 1) + (-2, -2) é (2, -3), ou seja, o x vale (2, 0) e o y vale (0, -3) isso diz que o 2 "anda" dois pontos a direta e o y anda três pontos para baixo, então y acaba sendo maior do que o três, pois seu comprimento é maior.
+Se a soma de (3, -2) + (1, 1) + (-2, -2) é (2, -3), ou seja, o x vale (2, 0) e o y vale (0, -3) isso diz que o 2 "anda" dois pontos a direta e o y anda três pontos para baixo, então y acaba sendo maior do que o x, pois seu comprimento é maior.
 
 
 ### Exercise 2.13
