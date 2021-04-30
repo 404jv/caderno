@@ -126,19 +126,3 @@ Já (5, -12) tem os componentes (5, 0) e (0, -12), o primeiro componente tem o t
 
 ### Exercise 2.14
 Podemos usar o teorema de Pitagoras para descobrir um dos catetos, já  que temos a hipotenusa que é 6**2 e um dos catetos que é 1**2. Colocando isso na formula 6**2 = 1**2 + x**2, então x**2 é 35 colocando isso na raiz temos aproximadamente 5,916. Porém essa formula não consegue dizer a direção, pois pode ser tanto (1, 5,916) quanto (1, -5,916).
-
-
-
-18: Convince yourself algebraically that scaling the coordinates by a factor also scales the length of the 
-vector by the same factor. Suppose a vector of length c has the coordinates (a, b). Show that for any non-negative real 
-number s, the length of (s ∙ a, s ∙ b) is s ∙ c. (This can’t work for a negative value of s because a vector can’t have a 
-negative length.)
-
-x = (a, b) 
-x tamanho c
-
-s * x = (s * a, s * b)
-
-s *
-
-Suponha que um vetor de comprimento c tenha as coordenadas (a, b). Mostre que, para qualquer número s, o comprimento de (s ∙ a, s ∙ b) é s ∙ c.
