@@ -126,3 +126,17 @@ Já (5, -12) tem os componentes (5, 0) e (0, -12), o primeiro componente tem o t
 
 ### Exercise 2.14
 Podemos usar o teorema de Pitagoras para descobrir um dos catetos, já  que temos a hipotenusa que é 6**2 e um dos catetos que é 1**2. Colocando isso na formula 6**2 = 1**2 + x**2, então x**2 é 35 colocando isso na raiz temos aproximadamente 5,916. Porém essa formula não consegue dizer a direção, pois pode ser tanto (1, 5,916) quanto (1, -5,916).
+
+
+# Exercise 2.23
+for vectors u = (-2, 0), v = (1.5, 1.5), and w = (4, 1), what are the results of the vector subtractions v − w, u − v, and w − v?
+
+u = (-2, 0)
+v = (1.5, 1.5)
+w = (4, 1)
+
+v - w = (1.5 - 4, 1.5 - 1) = (2.5, 0.5)
+
+u - v = (-2 - 1.5, 0 - 1.5) = (-0.5, -1.5)
+
+w - v = (4 - 1.5, 1 - 1.5) =  (2.5, 0.5)
