@@ -149,3 +149,45 @@ u = (1, 2)
 v = (n, m) n > m
 distance u v = 13
 
+## Angles and trigonometry in the plane 2.3
+Até usamos apenas dois componentes o x e y, porém existem outras formas de se descrever vetores além dessa, uma delas é usando uma régua:
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-05-06_205249_WSrP2240m.png)
+
+Com o vetor (4, 3) conseguimos o tamanho 5 e com essas informação podemos usar a régua para sabe a direção. Esse vetor aponta para uma direção de 37° anti-horário da parte positava do x, podemos pegar agora para descrever o tamanho que é 5 e a direção de 37°, fincando assim (5, 37°) esses dois componentes são chamados de coordenadas polares e são apenas mais uma forma de descrever um vetor no plano, assim como o (x, y) que são chamados de coordenadas cartesianas. <br />
+As duas formas são boas, para somar vetores coordenadas cartesianas é melhor e em outros casos coordenadas polares vão ser melhor, mas em código usamos funções trigonometrica para manipular esses vetores.
+
+## From angles to components
+Caso tivessemos uma coordenada polar como (3, 116,57°) para passarmos essa coordenada para cartesiana precisamos traçar uma linha na régua de 116,57° anti-horário relativo a parte x positiva e então traçamos uma linha, ficando assim:
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-05-06_214630_9gKJ5rSuS.png)
+
+Assim que tivermos nossa linha podemos marcar um ponto que é 3 unidades a frente relativa ao ponto de origem, ficando assim:
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-05-06_215042_mlaHWivaO.png)
+
+Esse ponto vai nos dar a coordenada cartesiana de aproximadamente (-1,34, 2,68). Com um ângulo de 116,57° faz com que a cada uma unidade para a esquerda nós subimos duas, ou seja, o y sempre é duas (-2) vezes maior do que o x, assim como na coordenada anterior (-1,34, 2,68), (-1, -2), (-3, 6) e etc... Nem todos ângulos da uma proporção dá um número inteiro como o 116,57° dá o -2, mas todos ângulos dão uma proporção constante. <br />
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-05-06_223243_acdoPNG6q.png)
+
+Caso o ângulo seja de -200° teremos uma razão de -0,36 (pode se chamar proporção), isso que dizer que para cada -1 unidade na horizontal (x) teremos -0,36 na vertical (y)
+
+y = vertical
+x = horizontal
+
+45° razão 1
+1 unidade da horizontal = 1 vertical
+
+-200° razão -0,36
+-1 unidade da horizontal = -0,36 vertical
+
+![](https://ik.imagekit.io/dwei78ukbe/math_for_programmers/Screenshot_2021-05-06_223347_YxAhAaoVL.png)
+
+A razão ou proporção citadas anteriormente são chamadas também de tangentes e as funções são tan(), então os mesmos exemplos ficam: <br />
+
+tan(37°) ≈ ¾ <br />
+tan(116,57°) ≈ -2 <br />
+tan(45°) ≈ 1 <br />
+tan(200°) ≈ 0.36 <br /><br />
+
+A tangente não nos mostra a coordenadas cartesiana de fato de um vetor e sim mostra a razão, para procurar a coordenadas precisamos usar o seno e o cosseno.
