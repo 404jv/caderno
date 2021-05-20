@@ -82,7 +82,7 @@ Basicamente o compilador vai retornar 0 para a função de cima, que por sua vez
 É a recursão que a função X chama uma função Y que chama a função X...
 
 ---
-## 🐕 Recursão TAIL (com calda)
+## 🐕 Recursão TAIL (com cauda)
 
 A função onde a `recursão está no final da função`, ou seja, função tail.
 
@@ -110,7 +110,7 @@ int ateZero(int num) {
 A recursão não é a última coisa a ser feita, pois essa soma também está no final, ou seja, esse função de cima é non-tail.
 
 ---
-## 🐑 Recursão NON-TAIL (sem calda)
+## 🐑 Recursão NON-TAIL (sem cauda)
 Aqui a `recursão não está no final`, a **estrutura** é essa:
 
 ```C
