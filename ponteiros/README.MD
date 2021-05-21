@@ -82,7 +82,7 @@ int main(void) {
 Agora sim nós temos 3 ponteiros.
 
 ### 👈 Apontando para outro lugar
-Podemos fazer um ponteiro apontar para outra vairável, apenas fazendo isso:
+Podemos fazer um ponteiro apontar para outra variável, apenas fazendo isso:
 ```C
 int main(void) {
   int variavel_int = 2;
@@ -106,7 +106,7 @@ int main(void) {
 ```
 
 ### ☝ Pra onde tu apontas?
-Agora caso tu queira ver o endereço que algum poteiro guarda basta dar um print usando o "%p":
+Agora caso tu queira ver o endereço que algum ponteiro guarda basta dar um print usando o "%p":
 ```C
 int main(void) {
   float variavel_float = 3.12;
@@ -160,7 +160,7 @@ void trocar(int a, int b) {
 }
 ```
 
-Lembra que endereços são meio espaçosos? Então não conseguimos colocar eles em variáveis comuns, só que podemos colocá los em ponteiros, ou seja, vamos mudar esses parâmetros a e b com um “*”:
+Lembra que endereços são meio espaçosos? Então não conseguimos colocar eles em variáveis comuns, só que podemos coloca-los em ponteiros, ou seja, vamos mudar esses parâmetros a e b com um “*”:
 ```C
 void trocar(int* a, int* b) {
   int temp = a;
@@ -178,7 +178,7 @@ void trocar(int* a, int* b) {
 ```
 Então *a vale 2, então temp vai ficar valendo 2, agora *a recebe *b, como o *b vale 3 então *a agora vale  3, e por fim *b recebe temp, temp vale 2 então *b fica valendo 2. Agora você pode testar os valores que quiser usando essa função ae!.</br>
 
-🎉 Pronto! Espero que esse mini artigo sobre ponteiros tenha ajudado, saiba que esse é um dos topicos mais difíceis da programação e precisa de tempo, prática e uma boa pausa é sempre bem-vinda para o seu cerebro assimilar esse conceito.</br>
+🎉 Pronto! Espero que esse mini artigo sobre ponteiros tenha ajudado, saiba que esse é um dos topicos mais difíceis da programação e precisa de tempo, prática e uma boa pausa é sempre bem-vinda para o seu cérebro assimilar esse conceito.</br>
 
 🧠 Você pode aprender qualquer coisa e tenha um ótimo dia.
 
