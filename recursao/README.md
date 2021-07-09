@@ -32,10 +32,6 @@ As funções recursivas possuem regras, são elas:
 if (num == 0) return 0;
 ```
 
-`Onde a recursividade acontece?` </br>
-Vai depender do tipo de recursividade, normalmente no final que são as `funções recursivas diretas`
-porém com tudo toda via, a recursão pode acontecer no meio que são as `funções recursivas indiretas`.
-
 `Altere o estado` </br>
 No nosso exemplo anterior alteramos o estado da num nessa linha:
 
