@@ -6,3 +6,4 @@ Studies about GIT.
 - [🌃 Create Branch and Checkout](create_banch_and_checkout.md)
 - [🥋 Rebase](rebase.md)
 - [🌧 Relative Refs](relative_refs.md)
+- [🎁 Reversing Changes](reversing_changes.md)
