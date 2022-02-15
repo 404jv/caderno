@@ -12,6 +12,7 @@ anotações e exemplos de coisas que estou aprendendo, e provavelmente fiz um v�
     - 🔍 [Busca Binária](/algoritmos_busca/busca_binaria)
 - 🏠 [Estrutura de dados](/estrutura_dados)
     - 🌌 [Listas](estrutura_dados/listas)
+- 🥾 [Jest](/jest-test)
 
 ## 👨‍🎓 Anotações
 - 🔨 [GIT](/git)
