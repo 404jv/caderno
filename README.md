@@ -23,8 +23,9 @@ anotações e exemplos de coisas que estou aprendendo, e provavelmente fiz um v�
 ## 🎮 Gamification
 Vou colocar os meus strikes aqui, pois manter eles me motiva a estudar todo dia =).
 
-<p algin="cente">
+<p algin="center">
 	<img src="https://github-readme-streak-stats.herokuapp.com?user=404jv&theme=dark&hide_border=true&date_format=j%2Fn%5B%2FY%5D"/>
 </p>
+
 ---
 <p align="center">Feito com 💚 por João Victor Ramalho Alves</p>
