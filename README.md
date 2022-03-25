@@ -14,7 +14,7 @@ anotações e exemplos de coisas que estou aprendendo, e provavelmente fiz um v�
     - 🌌 [Listas](estrutura_dados/listas)
 
 ## 👨‍🎓 Anotações
-- [GraphQL](/graphql)
+- 🥊 [GraphQL](/graphql)
 - 🔨 [GIT](/git)
 - 🧹 [Clean Code](/clean_code)
 - 🧶 [Node](/nodejs)
