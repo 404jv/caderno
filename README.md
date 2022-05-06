@@ -22,7 +22,7 @@ anotações e exemplos de coisas que estou aprendendo, e provavelmente fiz um v�
 - 🃏 [Jest](/jest-test)
 
 ## 🎮 Gamificação
-Vou colocar os meus strikes aqui, pois manter eles me motiva a estudar todo dia =).
+Vou colocar os meus strikes aqui, pois manter eles me motiva a estudar todo dia.
 
 <img algin="center" src="https://github-readme-streak-stats.herokuapp.com?user=404jv&theme=dark&hide_border=true&date_format=j%2Fn%5B%2FY%5D"/>
 
