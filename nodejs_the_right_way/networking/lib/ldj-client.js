@@ -26,6 +26,12 @@ class LDJClient extends EventEmitter {
       if (!fullMessage.endsWith('\n')) {
         throw new Error('Data does not end with a newline');
       }
+      this.emit('close');
+    });
+
+    stream.on('error', (err) => {
+      this.emit('error', err);
+      this.emit('close');
     });
   }
   static connect(stream) {

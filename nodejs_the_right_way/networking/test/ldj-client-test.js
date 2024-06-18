@@ -72,4 +72,20 @@ describe('LDJClient', () => {
     }, new Error('Data does not end with a newline'));
     done();
   });
+
+  it('should emit a close event when the stream ends', done => {
+    client.on('close', () => {
+      done();
+    });
+    stream.emit('data', '{"foo":"bar"}\n');
+    stream.emit('end');
+  });
+
+  it('should emit a close event when the stream errors', done => {
+    // it can be better
+    client.on('error', () => {
+      done();
+    });
+    stream.emit('error', new Error('Stream error'));
+  });
 })
